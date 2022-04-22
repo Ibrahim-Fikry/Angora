@@ -38,6 +38,19 @@
         font-size: 18px;
         color: rgba(153, 153, 153, .6);
     }
+    /*------------------------------------------------------  fixed parart1 */
+    
+    .fixed-part1 {
+        background-image: url(../images/icon_panel.png);
+        top: 20%;
+        left: 0%;
+        width: 35px;
+        height: 35px;
+        background-color: black;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    /*------------------------------------------------------ end fixed part 1 */
     /*------------------------------------------------------  nav */
     
     .navbar {
@@ -144,5 +157,24 @@
     
     #Services {
         background-color: #fafafa;
+    }
+    
+    .services-content i {
+        color: #f25454;
+    }
+    
+    .services-content h4 {
+        font-size: 18px;
+        color: black;
+        transition: .5s;
+    }
+    
+    .services-content i {
+        padding-left: 20px;
+    }
+    
+    .services-content:hover.services-content h4 {
+        color: #f25454;
+        transition: .5s;
     }
     /*--------------------------------------------------------- end team     */
