@@ -178,3 +178,51 @@
         transition: .5s;
     }
     /*--------------------------------------------------------- end team     */
+    /*---------------------------------------------------------      Contact     */
+    
+    #Contact {
+        background-color: #fafafa;
+    }
+    
+    .contact-details h3 {
+        font-size: 32px;
+        line-height: 32px;
+        font-family: "Poppins", sans-serif;
+        color: #282828;
+        font-weight: 600;
+    }
+    
+    .contact-details h4 {
+        font-size: 18px;
+        line-height: 24px;
+        font-family: "Poppins", sans-serif;
+        color: #282828;
+        font-weight: 600;
+        transition: .5s;
+    }
+    
+    .contact-border {
+        border-bottom: rgba(68, 68, 68, .2) 1px solid;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-border i {
+        color: #f25454;
+        font-size: 1.5rem;
+        transition: .5s;
+    }
+    
+    .contact-border:hover h4 {
+        color: #f25454;
+    }
+    
+    form input::placeholder {
+        opacity: .8;
+        color: #a6a6a6;
+    }
+    
+    form textarea::placeholder {
+        opacity: .8;
+        color: #a6a6a6;
+    }
+    /*--------------------------------------------------------- end  Contact     */
