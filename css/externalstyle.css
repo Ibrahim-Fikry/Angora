@@ -3,12 +3,40 @@
     margin: 0%;
 }
 
-.home {
-    background-image: url(../images/header-bg.jpg);
-    background-position: center center;
-    background-size: cover;
+.active {
+    color: #f25454 !important;
 }
 
-.layercolor {
-    background-color: rgba(0, 0, 0, .5);
+nav li a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #282828
+}
+
+nav li a:hover {
+    color: #f25454 !important;
+    transition: .5s;
+}
+
+nav i:hover {
+    color: #f25454 !important;
+    transition: .5s;
+}
+
+.logo-text {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.logo-text:hover {
+    color: black;
+}
+
+.logo-img {
+    width: 40px;
+    color: black;
+    background-color: #f25454;
 }
