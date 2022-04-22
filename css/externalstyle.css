@@ -1,0 +1,14 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.home {
+    background-image: url(../images/header-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.layercolor {
+    background-color: rgba(0, 0, 0, .5);
+}
