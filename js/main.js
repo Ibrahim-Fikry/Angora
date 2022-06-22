@@ -2,7 +2,7 @@
 
 $(window).scroll(function() {
     let scrolheight = $(window).scrollTop()
-    console.log(scrolheight);
+
     let Homeheight = $('#Home').height()
     if (scrolheight > Homeheight) {
         $('.navbar').removeClass('bg-white')
@@ -39,8 +39,18 @@ $(window).scroll(function() {
 //
 
 //fixwd arrowup animate
+// smooth scroll with fixwd arrowup
 $('.fixedarrowup').click(function() {
+        $('body,html').animate({
+            scrollTop: '0'
+        }, 1200)
+    })
+    //smooth scroll with
+$('.nav-link').click(function() {
+
+    let selectedli = $(this).attr('href')
+    let selectedlioffset = $(selectedli).offset().top
     $('body,html').animate({
-        scrollTop: '0'
+        scrollTop: selectedlioffset
     }, 1200)
 })
