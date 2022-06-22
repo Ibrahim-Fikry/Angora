@@ -55,11 +55,11 @@ $('.nav-link').click(function() {
     }, 1200)
 })
 
-//fixedpart    setting
+//fixedpart   --------------------------------------- setting
 //1 show-hide setting
-$('.options').hide()
+$('.optionssetting').hide()
 $('.islid').click(function() {
-    $('.options').toggle(500)
+    $('.optionssetting').toggle(500)
 })
 
 //2  setting  change color
@@ -67,7 +67,22 @@ $('.ulcolor li').click(function(e) {
     // console.log($(this).css('background-color'));
     // console.log($(e.target).css('backgroundColor'));
     let selectecolor = $(this).css('background-color');
-    $('p').css({
-        'color': selectecolor
-    })
+    $('p,i,h1').css({
+            'color': selectecolor,
+            'transition': 'all 1s'
+        })
+        // handel focuson clicked color 
+    $(this).css('border', 'solid 2px yellow')
+        // $(this).siblings().css('border', 'none')   not working
+    $(this).siblings().css('border-style', 'none')
+})
+
+//3 setting change img
+$('.optionssetting img').click(function() {
+    let selectedsrc = $(this).attr('src')
+    console.log(selectedsrc);
+    console.log($('.carousel-item img').attr('src'));
+    $('.carousel-item img').attr('src', selectedsrc)
+    console.log($('.carousel-item img'));
+
 })

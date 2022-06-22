@@ -53,8 +53,13 @@
                 z-index: 99;
             }
             
-            .options li,
-            img {
+            .optionssetting li {
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+            }
+            
+            .optionssetting img {
                 width: 40px;
                 height: 40px;
                 cursor: pointer;
