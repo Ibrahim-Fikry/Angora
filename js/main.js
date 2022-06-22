@@ -61,3 +61,13 @@ $('.options').hide()
 $('.islid').click(function() {
     $('.options').toggle(500)
 })
+
+//2  setting  change color
+$('.ulcolor li').click(function(e) {
+    // console.log($(this).css('background-color'));
+    // console.log($(e.target).css('backgroundColor'));
+    let selectecolor = $(this).css('background-color');
+    $('p').css({
+        'color': selectecolor
+    })
+})
