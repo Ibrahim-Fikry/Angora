@@ -39,17 +39,29 @@
                 color: rgba(153, 153, 153, .6);
             }
             /*------------------------------------------------------  fixed parart1 */
+            /* fixed  setting */
             
             .fixed-part1 {
-                background-image: url(../images/icon_panel.png);
+                /* background-image: url(../images/icon_panel.png); */
                 top: 20%;
                 left: 0%;
-                width: 35px;
-                height: 35px;
-                background-color: black;
+                /* width: 35px; */
+                /* height: 35px; */
+                /* background-color: black; */
                 border-top-right-radius: 5px;
                 border-bottom-right-radius: 5px;
                 z-index: 99;
+            }
+            
+            .options li,
+            img {
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+            }
+            
+            .fixed-part1 i {
+                color: #f25454;
             }
             /*------------------------------------------------------ end fixed part 1 */
             /*------------------------------------------------------ fixed arrow up */

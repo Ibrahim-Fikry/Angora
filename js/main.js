@@ -47,10 +47,17 @@ $('.fixedarrowup').click(function() {
     })
     //smooth scroll with
 $('.nav-link').click(function() {
-
+    // console.log(this);
     let selectedli = $(this).attr('href')
     let selectedlioffset = $(selectedli).offset().top
     $('body,html').animate({
         scrollTop: selectedlioffset
     }, 1200)
+})
+
+//fixedpart    setting
+//1 show-hide setting
+$('.options').hide()
+$('.islid').click(function() {
+    $('.options').toggle(500)
 })
