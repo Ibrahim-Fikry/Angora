@@ -15,9 +15,21 @@
     <title>Angora</title>
 </head>
 
-<body>
+<body class=" overflow-hidden">
 
     <!-- -------------------  fixed parrts ------->
+    <!-- loooooading  -->
+    <div class="loading w-100 vh-100 position-fixed top-0 start-0 d-flex justify-content-center align-items-center  ">
+        <!-- first sulotion -->
+        <!-- <i class="fas fa-spinner fa-3x fa-spin"> </i> -->
+        <!-- second selution -->
+        <!-- https://tobiasahlin.com/spinkit/  -->
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
     <!-- settings -->
     <div class="fixed-part1 position-fixed  d-flex">
         <div class="optionssetting">
@@ -723,6 +735,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <!--jquery-  -->
     <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
     <!-- js -->
     <script src="js/main.js"></script>
 </body>

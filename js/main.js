@@ -86,3 +86,18 @@ $('.optionssetting img').click(function() {
     console.log($('.carousel-item img'));
 
 })
+
+
+//4- loading screen
+$(document).ready(function() {
+    // $('.loading').removeClass('d-flex').addClass('d-none')   //workig
+    // $('.loading').replace('d-flex', 'd-none')  not working
+    // use jq ui
+    // note   time not working with slideup
+    $('.loading').slideUp(500, function() {
+        $('.loading').switchClass('d-flex', 'd-none', function() {
+            $('body').removeClass('overflow-hidden')
+        })
+    })
+
+})
